@@ -19,7 +19,7 @@ Axios.post('/create',{
     wage: wage,
     position:position,
     country: country
-}).then(Response=>{alert('Duplicate value detected please recheck UID \n status: 500')})
+}).then(Response=>{alert('Please recheck the entries \n status: 500')})
     
    
     

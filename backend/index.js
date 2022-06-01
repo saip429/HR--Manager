@@ -36,7 +36,7 @@ app.post('/create', (req,res)=>{
    const country= req.body.country;
 
    if(!UID || !name || !age || !wage || !position || !country){
-       res.status(400)
+    res.send({ success: false, message: 'database error', error: err });
    }
    else{
        
