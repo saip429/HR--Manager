@@ -1,0 +1,63 @@
+#landing--cnt{
+    box-sizing: border-box;
+    background-color: rgba(0,255,255,0.35);
+   padding-bottom: 1rem;
+    
+}
+
+#landing--img{
+   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    width: 40%;
+    
+  
+}
+
+#landing--cnt p{
+   
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding-top: 1rem;
+}
+#landing--pg{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 2rem;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+background-color: rgba(229, 90, 236,0.85);
+text-align: center;
+   
+}
+
+#landing--pg:hover{
+    animation: ease-in-out;
+    box-shadow: 2px 2px 5px 5px rgba(128,0,128,0.45);
+   
+}
+
+#landing--card{
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    background-color: aqua;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 12px;
+
+
+}
+#card--title{
+    font-weight: 900;
+}
+#landing--card:hover{
+    animation: ease-in-out;
+    box-shadow: 2px 2px 5px 5px rgba(128,0,128,0.45);
+}

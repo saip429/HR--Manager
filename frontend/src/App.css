@@ -1,0 +1,10 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+ #main-cnt{
+   max-width: 500px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+

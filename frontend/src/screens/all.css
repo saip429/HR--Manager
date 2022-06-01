@@ -1,0 +1,23 @@
+#emp--card{
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 60%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+#emp--card:hover{
+    box-shadow: 3px 3px 3px 3px black;
+}
+* li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+* li a:hover{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}

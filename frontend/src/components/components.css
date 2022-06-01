@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0%;
+  
+}
+#header--nav{
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(0,0,255, 0.35);
+    height: 10vh;
+   align-items: center;
+}
+
+#emp--link{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin-right: 2rem;
+    font-size: x-large;
+    font-weight: 100;
+    padding: 2rem;
+}
+#emp--brand{
+    margin-left: 2rem;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    
+}
+
+#footer{
+    margin: 0;
+    background-color:rgba(0,0,255, 0.35);
+    height: 5vh;
+}
+
+#footer--text{
+    margin-left: 2rem;
+}
