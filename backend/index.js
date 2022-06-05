@@ -36,18 +36,20 @@ app.post('/create', (req,res)=>{
    const country= req.body.country;
 
    if(!UID || !name || !age || !wage || !position || !country){
-    res.send({ success: false, message: 'database error', error: err });
+    res.send({ msg: 'invalid code' });
    }
    else{
        
             db.query('insert into emplyees (uid, name,age,country,wage,position) values (?,?,?,?,?,?)', [UID, name,age,country,wage,position],
             (err,result)=>{
                 if(err)
-                res.send({ success: false, message: 'database error', error: err });
+                res.send({msg: 'UID is already exists, please re-enter  UID'})
                 else
-                console.log('values inserted')
-            })
+                {
             db.query('commit')
+            res.send({msg: 'values inserted'})}
+            })
+            
            }
            
        })
@@ -75,9 +77,9 @@ app.put('/update',(req,res)=>{
     
     db.query(`update emplyees set name= ?, age=?, country=?, wage=?, position=? where uid = '${uid}' `,[name,age,country,wage,position],(err,result)=>{
         if(err)
-        console.log(err)
+        res.send({msg: 'database error'})
         else
-        console.log('updated')
+        res.send({msg: 'values updated!'})
     })
     db.query('commit')
 })

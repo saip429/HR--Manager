@@ -11,6 +11,7 @@ const[country, setCountry]= useState('');
 const[position, setPosition]= useState('');
 const[wage, setWage]= useState(0);
 
+
 const addEmployee= ()=>{
 Axios.post('/create',{
     uid: uid,
@@ -19,17 +20,30 @@ Axios.post('/create',{
     wage: wage,
     position:position,
     country: country
-}).then(Response=>{alert('Please recheck the entries \n status: 500')})
+}).then(res=> { 
+    
+alert(res.data.msg)
+})
+
     
    
     
+
+
+
+
+}
+
+function handleSubmit(e){
+    e.preventDefault();
+    e.target.reset();
 }
 
 
 
     return(
-      <form>
-       
+      
+       <form onSubmit={handleSubmit}>
             <div className=" mb-3  py-5 " id='main-cnt'>
             <label className="form-label mb-3" for="UID">UID </label>
                 <input autoComplete="off" id= 'UID' name='UID' required='true' type= 'text' className=' form-control' placeholder='UID' 
@@ -71,8 +85,8 @@ Axios.post('/create',{
                 <button className="btn btn-primary mt-2 w-100" onClick={addEmployee}  >Add Employee</button>
                 
                  </div>
-                 </form>
-
+                 
+</form>
        
 
     )

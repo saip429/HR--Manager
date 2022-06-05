@@ -26,7 +26,7 @@ function submitChanges(){
     wage: wage,
     position:position,
     country: country
-    }).then(alert('values updated!'))}
+    }).then(res=> alert(res.data.msg))}
 
 }
 
