@@ -6,10 +6,10 @@ const cors= require('cors')
 app.use(cors())
 app.use(express.json())
 const db= mysql.createConnection({
-    user:'root',
+    user:'admin',
     
-    host:'localhost',
-    password:'ProNoob290402',
+    host:'database-1.c8hjebd9wtea.ap-south-1.rds.amazonaws.com',
+    password:'Admin123',
     database: 'employeesystem',
    
 })
@@ -40,7 +40,7 @@ app.post('/create', (req,res)=>{
    }
    else{
        
-            db.query('insert into emplyees (uid, name,age,country,wage,position) values (?,?,?,?,?,?)', [UID, name,age,country,wage,position],
+            db.query('insert into emplyoees (uid, name,age,country,wage,position) values (?,?,?,?,?,?)', [UID, name,age,country,wage,position],
             (err,result)=>{
                 if(err)
                 res.send({msg: 'UID is already exists, please re-enter  UID'})
@@ -55,7 +55,7 @@ app.post('/create', (req,res)=>{
        })
 
 app.get('/allemployees',(req,res)=>{
- db.query('select * from emplyees',(err,result)=>{
+ db.query('select * from employees',(err,result)=>{
     if(err)
     console.log(err)
     else{

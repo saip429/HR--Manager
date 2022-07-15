@@ -1,8 +1,8 @@
-# HR Manager(development build)  
+# HR Manager  
 
 A simple yet effective application built to perform CRUD operations  
-technologies used:  
-mySQL (database)  
-react.js (frontend)  
-node.js (backend)  
-runs on localhost  
+Built using react.js, node.js and mySQL  
+ mySQL databse deployed to AWS RDS instance  
+ node.js backend runs on heroku  
+ fontend deployed on firebase  
+  
