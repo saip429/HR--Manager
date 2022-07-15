@@ -45,7 +45,7 @@ return(
                           </li>
                           <li class="list-group-item">
                          <label for='name--in'>Name: </label>
-                         <input id='name--in' className="form-control" autoComplete="off" required='true' placeholder={val.name}  onChange={(event)=>{setName(event.target.value)}}></input>
+                         <input id='name--in' className="form-control" autoComplete="off" required='true' placeholder={val.e_name}  onChange={(event)=>{setName(event.target.value)}}></input>
                          
                           </li>
                           <li class="list-group-item">
