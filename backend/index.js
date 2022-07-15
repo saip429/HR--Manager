@@ -2,6 +2,7 @@ const express= require('express')
 const app= express()
 const mysql= require('mysql')
 const cors= require('cors')
+const pass= process.env.pass
 
 app.use(cors())
 app.use(express.json())
@@ -9,7 +10,7 @@ const db= mysql.createConnection({
     user:'admin',
     
     host:'database-1.c8hjebd9wtea.ap-south-1.rds.amazonaws.com',
-    password:'Admin123',
+    password:pass,
     database: 'employeesystem',
    
 })
