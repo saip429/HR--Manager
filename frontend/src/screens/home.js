@@ -24,14 +24,6 @@ Axios.post('/create',{
     
 alert(res.data.msg)
 })
-
-    
-   
-    
-
-
-
-
 }
 
 function handleSubmit(e){
