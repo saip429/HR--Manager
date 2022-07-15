@@ -1,6 +1,6 @@
 # HR Manager  
 
-A simple yet effective application built to perform CRUD operations   
+A HR manager app that allows CRUD operations  
 demo: https://hrmanager-10eaf.web.app  
 Built using react.js, node.js and mySQL  
  mySQL databse deployed to AWS RDS instance  
