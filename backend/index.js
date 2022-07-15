@@ -75,7 +75,7 @@ app.put('/update',(req,res)=>{
     const position= req.body.position;
     const country= req.body.country;
     
-    db.query(`update emplyees set name= ?, age=?, country=?, wage=?, position=? where uid = '${uid}' `,[name,age,country,wage,position],(err,result)=>{
+    db.query(`update employees set name= ?, age=?, country=?, wage=?, position=? where uid = '${uid}' `,[name,age,country,wage,position],(err,result)=>{
         if(err)
         res.send({msg: 'database error'})
         else
@@ -86,7 +86,7 @@ app.put('/update',(req,res)=>{
 
 app.get('/info/:id', (req,res)=>{
     const id= req.params.id;
-    db.query('select * from emplyees where(uid= ?)',[id],(err,result)=>{
+    db.query('select * from employees where(uid= ?)',[id],(err,result)=>{
         if(err){
             console.log(err)
         }
@@ -98,7 +98,7 @@ app.get('/info/:id', (req,res)=>{
 
 app.delete('/delete/:id',(req,res)=>{
     const id= req.params.id;
-    db.query('delete from emplyees where uid= ?',[id],(err)=>{
+    db.query('delete from employees where uid= ?',[id],(err)=>{
         if(err){
            console.log(err)
         }
