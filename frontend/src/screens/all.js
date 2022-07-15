@@ -25,6 +25,7 @@ function All(){
     function deleteEmployees(uid){
        if( (window.confirm('are you sure ?')))
         axios.delete(`/delete/${uid}`)
+      getEmployees();l
         
 
     }
