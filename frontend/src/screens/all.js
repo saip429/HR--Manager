@@ -41,7 +41,7 @@ return(
             <> <div className="card" id="emp--card" >
                  <ul class="list-group list-group-flush">
     <li class="list-group-item">UID: {val.uid} </li>
-    <li class="list-group-item">Name: {val.name} </li>
+    <li class="list-group-item">Name: {val.e_name} </li>
     <li class="list-group-item">Age: {val.age} </li>
     <li class="list-group-item">Country: {val.country} </li>
     <li class="list-group-item">Position: {val.position} </li>
