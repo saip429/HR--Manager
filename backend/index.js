@@ -7,11 +7,11 @@ const cors= require('cors')
 app.use(cors())
 app.use(express.json())
 const db= mysql.createConnection({
-    user:'admin',
+    user:proces.env.DB_USER,
     
-    host:'',//aws ip ,
-    password: '',//password ,
-    database: 'employeesystem',
+    host:process.env.DB_URI,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
    
 })
 
